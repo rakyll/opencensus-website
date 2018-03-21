@@ -1,10 +1,8 @@
 {{ define "main" -}}
-<div class="posts">
+<div class="content">
 {{ range .Data.Pages -}}
 {{ if eq .Type "index" }}
-<div class="post">
   {{ .Content }}
-</div>
 {{ end }}
 {{- end }}
 </div>
